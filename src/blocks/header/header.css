@@ -1,0 +1,39 @@
+.header {
+    margin: 0 auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 100px;
+    height: 20px;
+}
+
+.header__text {
+    margin: 0;
+    padding: 0;
+    max-width: 326px;
+
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20.3px;
+    text-align: right;
+}
+
+@media (max-width: 1300px) {
+    .header__text {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 978px) {
+    .header__text {
+        color: #222222;
+    }
+}

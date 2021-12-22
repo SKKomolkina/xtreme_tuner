@@ -1,0 +1,18 @@
+.svg-header {
+    /*position: relative;*/
+    /*overflow-x: hidden;*/
+}
+
+.svg__blue {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*top: -630px;*/
+    /*left: 935px;*/
+
+    width: 1477px;
+    height: 1346px;
+    /*transform: rotate(-40.43deg);*/
+
+    z-index: -1;
+}
