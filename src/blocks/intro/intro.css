@@ -48,12 +48,12 @@
 
 .intro__image {
     position: absolute;
-    top: 166px;
-    right: -60px;
+    right: 0;
+    top: 138px;
 }
 
 .intro-button__wrapper {
-    margin-top: 60px;
+    margin-top: 85px;
     /*width: 100%;*/
 
     display: flex;
@@ -102,26 +102,28 @@
 }
 
 /*MEDIA*/
-@media (max-width: 1860px) {
+@media (max-width: 1890px) {
     .intro__image {
-        max-width: 80%;
-        max-height: 80%;
+        right: -5%;
     }
 }
 
 @media (max-width: 1780px) {
     .intro__image {
-        right: -300px;
+        top: 181px;
+        right: -258px;
     }
 }
 
 @media (max-width: 1300px) {
     .intro {
         margin-bottom: 170px;
+        margin-top: 117px;
     }
 
     .intro__title {
         margin-top: 8px;
+        margin-bottom: 10px;
 
         font-size: 64px;
         line-height: 78px;
@@ -138,7 +140,7 @@
     }
 
     .intro__image {
-        max-width: 1015px;
+        max-width: 975px;
     }
 
     .intro__button_btn {
@@ -157,13 +159,12 @@
     }
 }
 
-@media (max-width: 978px) {
+@media (max-width: 990px) {
     .intro__image {
-        /*max-width: 110vw;*/
+        max-width: 960px;
 
-        top: 377px;
-        right: -88px;
-        /*left: 0;*/
+        top: 379px;
+        right: -130px;
     }
 
     .intro {
@@ -187,10 +188,76 @@
     }
 
     .intro-button__wrapper {
+        margin-top: 0;
+
         flex-direction: column;
     }
 
     .intro__button_btn {
         margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 699px) {
+    .intro__subtitle {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .intro__title {
+        margin-top: 0;
+        margin-bottom: 26px;
+
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .intro__image {
+        max-width: 855px;
+
+        right: -199px;
+        top: 425px;
+    }
+}
+
+@media (max-width: 468px) {
+    .intro {
+        margin-top: 30px;
+        min-height: 749px;
+    }
+
+    .intro__subtitle {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .intro__title {
+        margin-top: 8px;
+        margin-bottom: 11px;
+
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .intro__image {
+        max-width: 605px;
+
+        right: -152px;
+        top: 373px;
+    }
+
+    .intro__button_btn {
+        margin-bottom: 14px;
+
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .intro__button_link {
+        margin: 0;
+        padding: 0;
+
+        font-size: 14px;
+        line-height: 17px;
     }
 }

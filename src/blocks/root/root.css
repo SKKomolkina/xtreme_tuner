@@ -10,7 +10,7 @@
     background: url('../../images/img/1922-back.png') no-repeat top;
     background-size: 100%;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 
     font-family: 'Montserrat', sans-serif;
     color: #222222;
@@ -32,8 +32,29 @@
 }
 
 
-@media (max-width: 978px) {
+@media (max-width: 990px) {
     .root {
+        padding-right: 64px;
+        padding-left: 64px;
+
         background: url('../../images/img/768-back.svg') no-repeat right top;
+    }
+}
+
+@media (max-width: 699px) {
+    .root {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        background: url('../../images/img/699-back.svg') no-repeat right top;
+    }
+}
+
+@media (max-width: 468px) {
+    .root {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        background: url('../../images/img/320-back.svg') no-repeat right top;
     }
 }
