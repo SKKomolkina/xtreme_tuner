@@ -12684,16 +12684,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
 
+var oneCLickButton = document.querySelector('#one');
+var rgbButton = document.querySelector('#rgb');
+var fanButton = document.querySelector('#fan');
+var monitoringButton = document.querySelector('#monitoring');
 var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".mySwiper", {
   slidesPerView: 2,
   loop: true,
-  modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+  modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Keyboard, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel],
   // freeMode: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
     draggable: true,
-    dragSize: 3
+    dragSize: 249 // dragClass: '.swiper-scrollbar-drag',
+
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false
+  },
+  mousewheel: {
+    invert: false
+  },
+  breakpoints: {
+    1300: {
+      slidesPerView: 1.5
+    }
   }
 });
 })();
