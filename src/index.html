@@ -11,8 +11,10 @@
 <body class="root">
 <header class="header">
     <img src="<%=require('./images/Icons/logo.svg')%>" alt="KFA2" class="header__logo">
-    <p class="header__text">KFA2 – зарегистрированная торговая марка производственной группы Galaxy Microsystems
-        Limited.</p>
+    <p class="header__text">
+        KFA2 – зарегистрированная торговая марка производственной группы Galaxy Microsystems
+        Limited.
+    </p>
 </header>
 
 <main>
@@ -37,6 +39,49 @@
             <button type="button" class="intro__button intro__button_link">Перейти к инструкции</button>
         </div>
     </div>
+
+    <section class="about">
+        <div class="about-text__wrapper">
+            <h3 class="about__title">
+                Детальная настройка теперь и
+                <span class="about__title about__title_span">в мобильном формате!</span>
+            </h3>
+            <p class="about__text">
+                Всё это - одним движением пальца с устройств iOS и Android в
+                мобильном приложении Xtreme Tuner.
+            </p>
+        </div>
+
+        <ul class="about__icons">
+            <li class="about__icons-item">
+                <img src="<%=require('./images/Icons/fan 1.svg')%>" class="about__icon">
+                <p class="about__icon-text">
+                    Управление режимами работы вентиляторов!
+                </p>
+            </li>
+
+            <li class="about__icons-item">
+                <img src="<%=require('./images/Icons/2 PT.svg')%>" class="about__icon">
+                <p class="about__icon-text">
+                    Автоматический и ручной разгон
+                </p>
+            </li>
+
+            <li class="about__icons-item">
+                <img src="<%=require('./images/Icons/sun 1.svg')%>" class="about__icon">
+                <p class="about__icon-text">
+                    Настройка и синхронизация подсветки
+                </p>
+            </li>
+
+            <li class="about__icons-item">
+                <img src="<%=require('./images/Icons/dashboard 1.svg')%>" class="about__icon">
+                <p class="about__icon-text">
+                    Мониторинг показателей в реальном времени
+                </p>
+            </li>
+        </ul>
+    </section>
 
 
 </main>
