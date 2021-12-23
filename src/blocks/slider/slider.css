@@ -68,10 +68,11 @@
 }
 
 .swiper-slide {
-    padding: 56px 46px;
+    /*padding: 56px 46px;*/
+    padding: 0;
     margin-right: 16px;
     position: relative;
-    width: 894px;
+    max-width: 894px;
     min-height: 496px;
 
     background-color: #04488F;
@@ -86,14 +87,17 @@
 }
 
 .swiper-text__wrapper {
-    max-width: 40%;
-
+    margin-top: 46px;
+    margin-left: 46px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .swiper__title {
+    margin: 0 0 14px;
+    padding: 0;
+
     color: #ffffff;
     font-weight: 700;
     font-size: 36px;
@@ -101,6 +105,10 @@
 }
 
 .swiper__text {
+    margin: 0;
+    padding: 0;
+    max-width: 35%;
+
     color: #ffffff;
     font-weight: 400;
     font-size: 14px;
@@ -109,19 +117,24 @@
 
 .swiper__image {
     position: absolute;
-    max-width: 532px;
+    /*max-width: 532px;*/
 }
 
 .swiper-scrollbar {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 3px;
+    margin: 30px auto;
+    height: 2px;
+    max-width: 996px;
+
     background-color: rgba(4, 72, 143, 0.22);
-    cursor: pointer;
 }
 
 .swiper-scrollbar-drag {
     background-color: #04488F;
+    height: 4px;
+    /*width: 249px;*/
+
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 /*MEDIA*/
@@ -134,6 +147,27 @@
     .slider__title {
         font-size: 32px;
         line-height: 46px;
+    }
+
+    .swiper-text__wrapper {
+        margin-top: 48px;
+        margin-left: 49px;
+    }
+
+    .swiper__title {
+        margin-bottom: 22px;
+        max-width: 331px;
+
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .swiper__item {
+        max-width: 714px;;
+    }
+
+    .swiper-slide {
+
     }
 }
 
