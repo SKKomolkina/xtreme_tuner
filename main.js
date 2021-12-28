@@ -12761,7 +12761,20 @@ var changeImage = function changeImage() {
   document.querySelectorAll('.guide__image').forEach(function (item) {
     item.classList.add('guide__image-hidden');
   });
-};
+}; //
+
+
+window.addEventListener('resize', function () {
+  if (window.innerWidth <= 739) {
+    document.querySelector('.guide').classList.add('guide-hidden');
+    document.querySelector('.guide-mini').classList.remove('guide-hidden');
+  }
+
+  if (window.innerWidth > 739) {
+    document.querySelector('.guide').classList.remove('guide-hidden');
+    document.querySelector('.guide-mini').classList.add('guide-hidden');
+  }
+});
 })();
 
 /******/ })()
