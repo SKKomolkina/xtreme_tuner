@@ -1,0 +1,21 @@
+.info {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(251, 251, 251, 0.5);
+}
+
+.info__wrapper {
+    padding-left: 18.75%;
+    /*padding-right: 17.3%;*/
+    padding-bottom: 463px;
+}
+
+@media (max-width: 1300px) {
+    .info__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -13,3 +13,7 @@
 @import url(./blocks/about/about.css);
 
 @import url(./blocks/slider/slider.css);
+
+@import url('./blocks/info/info.css');
+
+@import url('./blocks/guide/guide.css');

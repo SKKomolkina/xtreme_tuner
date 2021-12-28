@@ -1,0 +1,198 @@
+.guide {
+    margin: 69px auto 0;
+    max-width: 1364px;
+    max-height: 915px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.guide__title {
+    padding: 0;
+    margin: 0 0 15px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+}
+
+.guide__subtitle {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #53575A;
+}
+
+.guide-text__wrapper {
+    max-width: 493px;
+}
+
+.guide-image__wrapper {
+    margin-top: 115px;
+    margin-right: 78px;
+
+    min-width: 692px;
+    max-width: 692px;
+    min-height: 372px;
+    max-height: 372px;
+
+    position: relative;
+
+    background-image: url('../../images/img/Rectangle-blue.png');
+}
+
+.guide__image {
+    position: absolute;
+    display: block;
+}
+
+.guide__image-hidden {
+    display: none;
+}
+
+#image-1 {
+    left: -135px;
+    top: -120px;
+}
+
+#image-2 {
+    top: -116px;
+    right: -237px;
+}
+
+#image-3 {
+    top: -116px;
+    right: -237px;
+}
+
+#image-4 {
+    left: -135px;
+    top: -120px;
+}
+
+.guide-buttons__wrapper {
+    padding: 0;
+    margin: 0;
+    max-width: 458px;
+
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-button__item {
+    padding: 41px 57px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.guide-button__item:last-child {
+    margin-bottom: 0;
+}
+
+.guide__button {
+    padding: 25px;
+    margin-right: 34px;
+
+    background-color: #A3B1D7;
+    border: none;
+    border-radius: 6px;
+}
+
+.guide__button:active {
+    background: linear-gradient(to top left, rgba(4, 72, 143, 1), rgba(26, 102, 181, 1));
+}
+
+.guide__button-image {
+    width: 50px;
+    height: 50px;
+}
+
+.guide__button-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/*MEDIA*/
+@media (max-width: 1300px) {
+    .guide {
+        margin-top: 49px;
+        max-height: max-content;
+
+        flex-wrap: nowrap;
+    }
+
+    .guide-image__wrapper {
+        margin: 120px auto 0;
+
+        width: 960px;
+        height: 372px;
+        max-width: 960px;
+        max-height: 372px;
+
+        background: url('../../images/img/Rectangle1300.svg');
+    }
+
+    #image-1 {
+        left: -32px;
+    }
+
+    #image-4 {
+        left: -32px;
+    }
+
+    #image-2 {
+        right: -72px;
+        top: -115px;
+    }
+
+    #image-3 {
+        right: -72px;
+        top: -115px;
+    }
+
+    .guide-buttons__wrapper {
+        margin: 230px auto 0;
+        max-width: 100%;
+
+        flex-direction: row;
+    }
+
+    .guide-button__item {
+        /*padding: 93px 32px 21px;*/
+        margin-bottom: 0;
+        padding: 0;
+        margin-right: 24px;
+        max-width: 222px;
+        position: relative;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide__button-text {
+        text-align: center;
+    }
+
+    .guide__button {
+        position: absolute;
+        top: -32px;
+    }
+}
+
+@media (max-width: 990px) {
+
+}
