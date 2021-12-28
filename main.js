@@ -12689,8 +12689,9 @@ var rgbButton = document.querySelector('#rgb');
 var fanButton = document.querySelector('#fan');
 var monitoringButton = document.querySelector('#monitoring');
 var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".mySwiper", {
-  slidesPerView: 2,
-  loop: true,
+  slidesPerView: 3,
+  // loop: true,
+  spaceBetween: 30,
   modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Keyboard, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel],
   // freeMode: true,
   scrollbar: {
@@ -12704,15 +12705,63 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".mySwiper", {
     enabled: true,
     onlyInViewport: false
   },
-  mousewheel: {
-    invert: false
-  },
+  // mousewheel: {
+  //     invert: false,
+  // },
   breakpoints: {
     1300: {
-      slidesPerView: 1.5
+      slidesPerView: 1
     }
   }
 });
+
+var handleChoseEl = function handleChoseEl(el) {
+  swiper.slideTo(el, 2); // swiper.activeIndex(el);
+
+  console.log(swiper.activeIndex);
+  console.log(el);
+};
+
+oneCLickButton.addEventListener('click', function () {
+  handleChoseEl(0);
+});
+rgbButton.addEventListener('click', function () {
+  handleChoseEl(1);
+});
+fanButton.addEventListener('click', function () {
+  handleChoseEl(2);
+});
+monitoringButton.addEventListener('click', function () {
+  handleChoseEl(3);
+}); // console.log(swiper);
+
+var button1 = document.querySelector('#info-button-1');
+var button2 = document.querySelector('#info-button-2');
+var button3 = document.querySelector('#info-button-3');
+var button4 = document.querySelector('#info-button-4');
+var imagesContainer = document.querySelector('.guide-image__wrapper');
+button1.addEventListener('click', function () {
+  changeImage();
+  document.querySelector('#image-1').classList.remove('guide__image-hidden');
+});
+button2.addEventListener('click', function () {
+  changeImage();
+  document.querySelector('#image-2').classList.remove('guide__image-hidden');
+});
+button3.addEventListener('click', function () {
+  changeImage();
+  document.querySelector('#image-3').classList.remove('guide__image-hidden');
+});
+button4.addEventListener('click', function () {
+  changeImage();
+  document.querySelector('#image-4').classList.remove('guide__image-hidden');
+});
+
+var changeImage = function changeImage() {
+  document.querySelectorAll('.guide__image').forEach(function (item) {
+    item.classList.add('guide__image-hidden');
+  });
+};
 })();
 
 /******/ })()
