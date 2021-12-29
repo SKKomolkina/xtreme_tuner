@@ -10,12 +10,158 @@
 .info__wrapper {
     padding-left: 18.75%;
     /*padding-right: 17.3%;*/
-    padding-bottom: 463px;
+    /*padding-bottom: 463px;*/
 }
 
-@media (max-width: 1300px) {
+.info-banner {
+    position: relative;
+
+    margin: 75px 21% 75px 10.2%;
+    width: 100%;
+    min-height: 714px;
+
+    background: url('../../images/img/Rectangle 354.svg') top left no-repeat;
+    background-size: 1316px 714px;
+}
+
+.info-banner__flex {
+    padding-top: 92px;
+    padding-left: 163px;
+    max-width: 387px;
+    /*max-height: 714px;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-banner__title {
+    margin: 0 0 50px;
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: #fff;
+}
+
+.info-banner__text {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.info-banner__icon {
+    padding: 0;
+    margin-top: 63px;
+    margin-bottom: 22px;
+}
+
+.info-banner__image {
+    position: absolute;
+    top: 61px;
+    right: 438px;
+}
+
+@media (max-width: 1830px) {
+    .info-banner {
+        max-width: 1482px;
+        min-height: 714px;
+    }
+
+    .info-banner__image {
+        right: -11px;
+        top: 69px;
+    }
+}
+
+@media (max-width: 1599px) {
+    .info-banner {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1780px) {
     .info__wrapper {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .info-banner {
+        width: 960px;
+        height: 521px;
+
+        background-size: 960px 521px;
+    }
+
+    .info-banner__flex {
+        padding-top: 62px;
+        padding-left: 28px;
+    }
+
+    .info-banner__title {
+        margin-bottom: 56px;
+
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .info-banner__text {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .info-banner__icon {
+        margin-top: 29px;
+        margin-bottom: 12px;
+    }
+
+    .info-banner__image {
+        right: -44px;
+        top: 68px;
+        max-width: 615px;
+    }
+}
+
+@media (max-width: 990px) {
+    .info__wrapper {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        position: relative;
+        background: none;
+        max-width: 100%;
+    }
+
+    .info__wrapper {
+        padding: 0;
+    }
+}
+
+@media (max-width: 739px) {
+    .info {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .info__wrapper {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 468px) {
+    .info__wrapper {
+        margin-top: 34px;
     }
 }

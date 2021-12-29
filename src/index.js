@@ -6,17 +6,17 @@ const rgbButton = document.querySelector('#rgb');
 const fanButton = document.querySelector('#fan');
 const monitoringButton = document.querySelector('#monitoring');
 
-const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+const swiper = new Swiper(".swiper", {
+    slidesPerView: 1.5,
     // loop: true,
-    spaceBetween: 30,
+    spaceBetween: 16,
     modules: [Scrollbar, Keyboard, Mousewheel],
     // freeMode: true,
     scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
         draggable: true,
-        dragSize: 249,
+        // dragSize: 249,
         // dragClass: '.swiper-scrollbar-drag',
     },
     keyboard: {
@@ -27,8 +27,9 @@ const swiper = new Swiper(".mySwiper", {
     //     invert: false,
     // },
     breakpoints: {
-        1300: {
+        1780: {
             slidesPerView: 1,
+            spaceBetween: 24,
         }
     }
 });
@@ -90,3 +91,4 @@ const changeImage = () => {
         item.classList.add('guide__image-hidden');
     })
 }
+

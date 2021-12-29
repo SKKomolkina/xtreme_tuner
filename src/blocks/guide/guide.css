@@ -1,5 +1,5 @@
 .guide {
-    margin: 69px auto 0;
+    margin-top: 69px;
     max-width: 1364px;
     max-height: 915px;
 
@@ -7,6 +7,14 @@
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+.guide-mini {
+    display: none;
+}
+
+.guide-hidden {
+    display: none;
 }
 
 .guide__title {
@@ -34,7 +42,7 @@
 
 .guide-image__wrapper {
     margin-top: 115px;
-    margin-right: 78px;
+    /*margin-right: 78px;*/
 
     min-width: 692px;
     max-width: 692px;
@@ -44,6 +52,10 @@
     position: relative;
 
     background-image: url('../../images/img/Rectangle-blue.png');
+}
+
+.guide-image__wrapper-lg {
+    min-height: 381px
 }
 
 .guide__image {
@@ -109,9 +121,16 @@
     background-color: #A3B1D7;
     border: none;
     border-radius: 6px;
+
+    /*transition: all .3s ease-in;*/
 }
 
 .guide__button:active {
+    background: linear-gradient(to top left, rgba(4, 72, 143, 1), rgba(26, 102, 181, 1));
+    /*transition: background-color .5s ease-in;*/
+}
+
+.guide__button:focus {
     background: linear-gradient(to top left, rgba(4, 72, 143, 1), rgba(26, 102, 181, 1));
 }
 
@@ -126,11 +145,90 @@
     line-height: 20px;
 }
 
+.guide-list_wrapper {
+    margin-top: 65px;
+    /*margin-left: 20px;*/
+    max-width: 422px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guide-number__wrapper {
+    width: 102px;
+    height: 102px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border-radius: 6px;
+    background-color: #A3B1D7;
+}
+
+.guide__number {
+    margin: 0;
+    /*padding: 16px 26px;*/
+    /*padding-top: 30px;*/
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67px;
+    color: #fff;
+}
+
+.guide__subtitle_mini {
+    margin-left: 39px;
+    max-width: 281px;
+    color: #222222;
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.guide-image__transparent-wrapper {
+    position: relative;
+    margin-top: 26px;
+    /*margin-bottom: 26px;*/
+
+    width: 100%;
+    min-height: 400px;
+}
+
+#image-1-mini {
+    max-width: 656px;
+    top: -41px;
+    left: -73px;
+}
+
+#image-2-mini {
+    left: -128px;
+    max-width: 745px;
+    top: 1px;
+}
+
+#image-3-mini {
+    left: -128px;
+    max-width: 743px;
+    top: -37px;
+}
+
+#image-4-mini {
+    left: -78px;
+    max-width: 666px;
+    top: -24px;
+}
+
+
 /*MEDIA*/
 @media (max-width: 1300px) {
     .guide {
         margin-top: 49px;
         max-height: max-content;
+        width: 100%;
 
         flex-wrap: nowrap;
     }
@@ -138,12 +236,13 @@
     .guide-image__wrapper {
         margin: 120px auto 0;
 
-        width: 960px;
+        width: 100%;
         height: 372px;
         max-width: 960px;
         max-height: 372px;
 
-        background: url('../../images/img/Rectangle1300.svg');
+        background: linear-gradient(to top left, rgba(4, 72, 143, 1), rgba(26, 102, 181, 1));
+        border-radius: 6px;
     }
 
     #image-1 {
@@ -165,17 +264,19 @@
     }
 
     .guide-buttons__wrapper {
-        margin: 230px auto 0;
+        margin-top: 230px;
+        /*margin-bottom: 40px;*/
+        width: 100%;
         max-width: 100%;
 
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .guide-button__item {
-        /*padding: 93px 32px 21px;*/
+        padding: 93px 32px 21px;
         margin-bottom: 0;
-        padding: 0;
-        margin-right: 24px;
+        /*margin-right: 24px;*/
         max-width: 222px;
         position: relative;
 
@@ -184,15 +285,217 @@
     }
 
     .guide__button-text {
+        margin: 0;
+        max-width: 158px;
+
         text-align: center;
+        font-size: 12px;
+        line-height: 17px;
     }
 
     .guide__button {
         position: absolute;
-        top: -32px;
+        top: -34px;
+        left: 65px;
+    }
+
+    .guide__title {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .guide__subtitle {
+        font-size: 16px;
+        line-height: 23px;
     }
 }
 
 @media (max-width: 990px) {
+    .guide__title {
+        margin-bottom: 21px;
+        max-width: 100%;
+    }
 
+    .guide-image__wrapper {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 77px;
+
+        max-width: 640px;
+        min-width: 640px;
+        max-height: 372px;
+        min-height: 372px;
+    }
+
+    #image-1, #image-4 {
+        max-width: 784px;
+        max-height: 546px;
+
+        left: -53px;
+        top: -56px;
+    }
+
+    #image-2, #image-3 {
+        max-width: 868px;
+        top: -51px;
+        right: -117px;
+    }
+
+    .guide-buttons__wrapper {
+        margin-top: 117px;
+        margin-bottom: 118px;
+    }
+
+    .guide-button__item {
+        padding: 0;
+        max-width: 122px;
+
+        background: transparent;
+    }
+
+    .guide__button {
+        margin-right: 0;
+        margin-bottom: 15px;
+
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 739px) {
+    .guide-mini {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 739px) {
+    .guide {
+        display: none;
+    }
+
+    .guide-mini {
+        margin-bottom: 60px;
+    }
+
+    .guide-image__wrapper {
+        margin-top: 62px;
+
+        min-width: 100vw;
+        min-height: 325px;
+        max-height: 325px;
+
+        border-radius: 0;
+    }
+
+    .guide-text__wrapper {
+        margin: 0 auto;
+        max-width: 330px;
+
+        text-align: center;
+    }
+
+    .guide__title {
+        margin-bottom: 19px;
+
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .guide__subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .guide__image-hidden {
+        display: block;
+    }
+}
+
+@media (max-width: 468px) {
+    .guide__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .guide__subtitle {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .guide__subtitle_mini {
+        margin-left: 17px;
+        max-width: 229px;
+    }
+
+    .guide-image__wrapper {
+        margin-top: 35px;
+        margin-bottom: 127px;
+
+        max-width: 332px;
+        /*min-width: 332px;*/
+        max-height: 184px;
+        min-height: 184px;
+    }
+
+    .guide-image__transparent-wrapper {
+        min-height: 249px;
+    }
+
+    .guide-image__wrapper-lg {
+        margin-top: 66px;
+        margin-bottom: 28px;
+        max-width: 332px;
+        max-height: 184px;
+    }
+
+    .guide-text__wrapper {
+        max-width: 300px;
+    }
+
+    #image-1-mini {
+        left: -71px;
+        max-width: 463px;
+        top: -15px;
+    }
+
+    #image-2-mini {
+        left: -63px;
+        max-width: 436px;
+        top: 3px;
+    }
+
+    #image-3-mini {
+        left: -65px;
+        max-width: 440px;
+        top: -35px;
+    }
+
+    #image-4-mini {
+        left: -70px;
+        max-width: 464px;
+        top: 6px;
+    }
+
+    .guide-list_wrapper {
+        margin: 0;
+    }
+
+    .guide-list__wrapper-marb {
+        margin-top: 80px;
+        margin-bottom: 28px;
+    }
+
+    .guide-number__wrapper {
+        /*margin-left: 10px;*/
+        max-width: 54px;
+        max-height: 54px;
+    }
+
+    .guide__number {
+        font-size: 24px;
+        line-height: 35px;
+    }
 }
