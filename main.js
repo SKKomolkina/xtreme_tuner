@@ -12688,17 +12688,17 @@ var oneCLickButton = document.querySelector('#one');
 var rgbButton = document.querySelector('#rgb');
 var fanButton = document.querySelector('#fan');
 var monitoringButton = document.querySelector('#monitoring');
-var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".mySwiper", {
-  slidesPerView: 3,
+var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
+  slidesPerView: 1.5,
   // loop: true,
-  spaceBetween: 30,
+  spaceBetween: 16,
   modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Keyboard, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel],
   // freeMode: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
-    draggable: true,
-    dragSize: 249 // dragClass: '.swiper-scrollbar-drag',
+    draggable: true // dragSize: 249,
+    // dragClass: '.swiper-scrollbar-drag',
 
   },
   keyboard: {
@@ -12761,20 +12761,7 @@ var changeImage = function changeImage() {
   document.querySelectorAll('.guide__image').forEach(function (item) {
     item.classList.add('guide__image-hidden');
   });
-}; //
-
-
-window.addEventListener('resize', function () {
-  if (window.innerWidth <= 739) {
-    document.querySelector('.guide').classList.add('guide-hidden');
-    document.querySelector('.guide-mini').classList.remove('guide-hidden');
-  }
-
-  if (window.innerWidth > 739) {
-    document.querySelector('.guide').classList.remove('guide-hidden');
-    document.querySelector('.guide-mini').classList.add('guide-hidden');
-  }
-});
+};
 })();
 
 /******/ })()
