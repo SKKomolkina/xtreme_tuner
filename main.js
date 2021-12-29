@@ -12709,8 +12709,9 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
   //     invert: false,
   // },
   breakpoints: {
-    1300: {
-      slidesPerView: 1
+    1780: {
+      slidesPerView: 1,
+      spaceBetween: 24
     }
   }
 });
