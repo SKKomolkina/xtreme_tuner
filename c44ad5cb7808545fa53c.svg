@@ -1,0 +1,25 @@
+<svg width="1000" height="4919" viewBox="0 0 1000 4919" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_313_475)">
+<rect width="1000" height="4919" fill="white"/>
+<rect x="-716" y="1951" width="2670" height="1447" fill="#FBFBFB"/>
+<circle opacity="0.03" cx="199.5" cy="2233.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="-62.5" cy="3298.5" r="309.5" stroke="#04488F" stroke-width="200"/>
+<circle opacity="0.03" cx="704.5" cy="3720.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="121" cy="701" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="113" cy="2694" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="95" cy="2182" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="681.5" cy="3183.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="848" cy="3125" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="638.5" cy="870.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="821" cy="3799" r="15" stroke="#04488F" stroke-width="10"/>
+<path d="M574.326 -10.7335C616.3 -127.538 750.995 -126.762 835.471 -94.6825L920.656 -22.332L1256.57 58.7988C1333.8 124.389 1367.06 248.594 1424.77 287.04C1482.48 325.486 1546.11 262.909 1569.01 321.106C1508.01 467.238 1440.82 907.438 1086.13 951.6C695.46 1000.24 378.498 751.164 556.427 581.61C890.03 263.71 521.859 135.272 574.326 -10.7335Z" fill="#04488F"/>
+<g style="mix-blend-mode:screen" opacity="0.07">
+<circle cx="1166" cy="428" r="303" stroke="white" stroke-width="200"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_313_475">
+<rect width="1000" height="4919" fill="white"/>
+</clipPath>
+</defs>
+</svg>
