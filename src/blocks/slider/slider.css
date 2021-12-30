@@ -41,6 +41,7 @@
     border: none;
     border-radius: 6px;
 
+    cursor: pointer;
     transition: background-color .3s ease-in;
 }
 
@@ -61,7 +62,7 @@
     margin-top: 117px;
     /*min-width: 100vw;*/
     /*width: max-content;*/
-    width: 1558px;
+    width: 899px;
 }
 
 .swiper-mini {
@@ -89,6 +90,7 @@
 
     background-color: #04488F;
     border-radius: 6px;
+    cursor: all-scroll;
 
     flex-shrink: 0;
     box-sizing: border-box;
@@ -265,9 +267,8 @@
 }
 
 @media (max-width: 990px) {
-
     .slider {
-        /*margin-bottom: 0;*/
+        margin-bottom: 49px;
     }
 
     .swiper {
@@ -301,6 +302,8 @@
         max-width: 640px;
         min-height: 400px;
         max-height: 400px;
+
+        cursor: auto;
     }
 
     .swiper-slide:last-child {
@@ -330,7 +333,7 @@
     }
 
     #slide-2-mini {
-        max-width: 538px;
+        width: 538px;
         top: 73px;
         right: -57px;
     }

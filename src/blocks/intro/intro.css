@@ -37,7 +37,7 @@
 }
 
 .intro__text {
-    margin: 0;
+    margin: 0 0 85px;
     padding: 0;
 
     font-weight: 400;
@@ -53,12 +53,14 @@
 }
 
 .intro-button__wrapper {
-    margin-top: 85px;
+    /*margin-top: 85px;*/
     /*width: 100%;*/
 
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    z-index: 3;
 }
 
 .intro__button_btn {
@@ -76,6 +78,7 @@
 
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .intro__button_link {
@@ -90,6 +93,7 @@
     text-transform: none;
     text-decoration-line: none;
     color: #04488F;
+    cursor: pointer;
 }
 
 .intro__button-icon {
