@@ -1,0 +1,23 @@
+<svg width="990" height="6529" viewBox="0 0 990 6529" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_327_169)">
+<rect width="990" height="6529" fill="white"/>
+<circle opacity="0.03" cx="98.5" cy="634.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="844.5" cy="1016.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="-20.5" cy="2326.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="917.5" cy="3322.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="9" cy="4506" r="198" stroke="#04488F" stroke-width="200"/>
+<circle opacity="0.03" cx="800.5" cy="4355.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="127" cy="794" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cy="2490" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="826" cy="4243" r="15" stroke="#04488F" stroke-width="10"/>
+<path d="M988.186 202.042C1060.03 168.574 1120.22 230.014 1143.65 282.748L1149.13 353.906L1263.33 542.73C1268.29 607.239 1226.91 678.159 1235.42 721.615C1243.92 765.071 1300.91 765.8 1284.81 802.347C1191.1 840.366 961.252 1007.77 781.785 866.753C584.111 711.43 554.601 455.708 711.483 460.191C1005.63 468.596 898.38 243.877 988.186 202.042Z" fill="#04488F"/>
+<g style="mix-blend-mode:screen" opacity="0.07">
+<circle cx="1065" cy="598" r="199" stroke="white" stroke-width="200"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_327_169">
+<rect width="990" height="6529" fill="white"/>
+</clipPath>
+</defs>
+</svg>
