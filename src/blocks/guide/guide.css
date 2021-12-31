@@ -1,7 +1,7 @@
 .guide {
-    margin-top: 69px;
+    /*margin-top: 69px;*/
     margin-bottom: 80px;
-    max-width: 1364px;
+    max-width: 1311px;
     max-height: 915px;
 
     display: flex;
@@ -56,7 +56,7 @@
 }
 
 .guide-image__wrapper-lg {
-    min-height: 381px
+
 }
 
 .guide__image {
@@ -124,6 +124,7 @@
     border-radius: 6px;
 
     cursor: pointer;
+    z-index: 3;
     /*transition: all .3s ease-in;*/
 }
 
@@ -148,8 +149,8 @@
 }
 
 .guide-list_wrapper {
-    margin-top: 65px;
-    /*margin-left: 20px;*/
+    margin-top: 59px;
+    margin-left: -14px;
     max-width: 422px;
 
     display: flex;
@@ -201,34 +202,34 @@
 }
 
 #image-1-mini {
+    left: 78px;
     max-width: 656px;
-    top: -41px;
-    left: -73px;
+    top: -42px;
 }
 
 #image-2-mini {
-    left: -128px;
+    left: -149px;
     max-width: 745px;
-    top: 1px;
+    top: 5px;
 }
 
 #image-3-mini {
-    left: -128px;
+    left: 21px;
     max-width: 743px;
-    top: -37px;
+    top: -38px;
 }
 
 #image-4-mini {
-    left: -78px;
+    left: -97px;
     max-width: 666px;
-    top: -24px;
+    top: -10px;
 }
 
 
 /*MEDIA*/
 @media (max-width: 1300px) {
     .guide {
-        margin-top: 70px;
+        margin-top: 0;
         margin-bottom: 37px;
         max-height: max-content;
         width: 100%;
@@ -237,7 +238,7 @@
     }
 
     .guide-image__wrapper {
-        margin: 120px auto 0;
+        margin-top: 120px;
 
         width: 100%;
         height: 372px;
@@ -270,7 +271,7 @@
         margin-top: 230px;
         /*margin-bottom: 40px;*/
         width: 100%;
-        max-width: 100%;
+        max-width: 960px;
 
         flex-direction: row;
         justify-content: space-between;
@@ -285,6 +286,8 @@
 
         flex-direction: column;
         align-items: center;
+
+        z-index: 3;
     }
 
     .guide__button-text {
@@ -300,6 +303,8 @@
         position: absolute;
         top: -34px;
         left: 65px;
+
+        z-index: 3;
     }
 
     .guide__title {
@@ -320,6 +325,7 @@
         margin-top: 0;
         margin-bottom: 0;
         max-height: 917px;
+        max-width: 687px;
     }
 
     .guide__title {
@@ -355,6 +361,7 @@
     .guide-buttons__wrapper {
         margin-top: 117px;
         margin-bottom: 118px;
+        max-width: 93%;
     }
 
     .guide-button__item {
@@ -394,11 +401,18 @@
     .guide-image__wrapper {
         margin-top: 62px;
 
-        min-width: 100vw;
+        min-width: 780px;
+        max-width: 780px;
         min-height: 325px;
         max-height: 325px;
 
         border-radius: 0;
+    }
+
+    .guide-image__wrapper-lg {
+        margin-top: 52px;
+        min-height: 381px;
+        margin-bottom: -15px;
     }
 
     .guide-text__wrapper {
@@ -472,21 +486,21 @@
     }
 
     #image-1-mini {
-        left: -71px;
+        left: 153px;
         max-width: 463px;
-        top: -15px;
+        top: -22px;
     }
 
     #image-2-mini {
-        left: -63px;
+        left: -71px;
         max-width: 436px;
-        top: 3px;
+        top: -6px;
     }
 
     #image-3-mini {
-        left: -65px;
+        left: 155px;
         max-width: 440px;
-        top: -35px;
+        top: -43px;
     }
 
     #image-4-mini {

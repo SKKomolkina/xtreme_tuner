@@ -76,6 +76,7 @@
 
 /*MEDIA*/
 @media (max-width: 1300px) {
+
     .about-text__wrapper {
         max-width: 508px;
     }

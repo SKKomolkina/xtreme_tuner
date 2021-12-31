@@ -203,6 +203,11 @@
         flex-direction: column;
     }
 
+    .intro-button__wrapper_right {
+        align-items: center;
+        max-width: 687px;
+    }
+
     .intro__button_btn {
         margin-bottom: 22px;
     }
@@ -279,5 +284,18 @@
 
         font-size: 14px;
         line-height: 17px;
+    }
+
+
+}
+
+@media (max-width: 371px) {
+    .intro-button__wrapper_right {
+        width: 282px;
+        margin-left: 10px;
+    }
+
+    .intro__button_btn {
+        width: 282px;
     }
 }
