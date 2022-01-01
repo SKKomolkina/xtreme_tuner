@@ -6,6 +6,8 @@
 
     background: url('../../images/img/1922-back.svg') no-repeat right top;
     background-size: 100%;
+
+    transition: all .3s ease-in;
 }
 
 @media (max-width: 1780px) {

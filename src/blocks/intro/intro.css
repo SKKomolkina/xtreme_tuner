@@ -294,10 +294,10 @@
 }
 
 @media (max-width: 371px) {
-    .intro-button__wrapper_right {
-        width: 282px;
-        margin-left: 10px;
-    }
+    /*.intro-button__wrapper_right {*/
+    /*    width: 282px;*/
+    /*    margin-left: 10px;*/
+    /*}*/
 
     .intro__button_btn {
         width: 282px;
