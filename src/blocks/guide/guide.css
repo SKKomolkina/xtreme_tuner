@@ -438,9 +438,19 @@
     .guide__image-hidden {
         display: block;
     }
+
+    .guide-list_wrapper {
+        align-self: flex-start;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 468px) {
+    .guide-mini {
+        max-width: 468px;
+        min-width: 300px;
+    }
+
     .guide-mini {
         margin-bottom: 0;
     }
@@ -483,12 +493,13 @@
 
     .guide-text__wrapper {
         max-width: 300px;
+        margin: 0;
     }
 
     #image-1-mini {
-        left: 153px;
+        left: 163px;
         max-width: 463px;
-        top: -22px;
+        top: -23px;
     }
 
     #image-2-mini {
@@ -498,15 +509,15 @@
     }
 
     #image-3-mini {
-        left: 155px;
+        left: 165px;
         max-width: 440px;
-        top: -43px;
+        top: -41px;
     }
 
     #image-4-mini {
-        left: -70px;
+        left: -81px;
         max-width: 464px;
-        top: 6px;
+        top: 0px;
     }
 
     .guide-list_wrapper {

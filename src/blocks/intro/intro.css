@@ -79,6 +79,8 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
+
+    transition: all .3s ease-in;
 }
 
 .intro__button_link {
@@ -94,6 +96,8 @@
     text-decoration-line: none;
     color: #04488F;
     cursor: pointer;
+
+    transition: all .3s ease-in;
 }
 
 .intro__button-icon {

@@ -1,15 +1,268 @@
 .download {
+    padding-top: 14px;
+    margin-bottom: 75px;
     max-width: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .download__title {
+    margin: 0;
+    padding: 0;
+    position: absolute;
 
+    top: 0;
+    left: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
 }
 
 .download-list {
+    margin: 0;
+    padding: 0;
+    /*max-width: 100%;*/
 
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 387px);
+    grid-template-rows: repeat(2, 232px);
+    grid-template-areas:
+    ". one two"
+    "three four five";
+    column-gap: 19px;
+    row-gap: 28px;
+}
+
+#download-1 {
+    grid-area: one;
+}
+
+#download-2 {
+    grid-area: two;
+}
+
+#download-3 {
+    grid-area: three;
+}
+
+#download-4 {
+    grid-area: four;
+}
+
+#download-5 {
+    grid-area: five;
 }
 
 .download-list__item {
+    padding: 24px 24px 21px;
+    width: 387px;
+    height: 232px;
 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: #969696 1px solid;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
+.download-item__title {
+    margin: 0;
+    padding: 0;
+    max-width: 260px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.download-item__text {
+    margin: 0;
+    padding: 0;
+    max-width: 260px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #53575A;
+}
+
+.download-item__button {
+    padding: 11px 41px;
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+
+    background-color: #A3B1D7;
+    border: none;
+    border-radius: 6px;
+
+    align-self: flex-end;
+
+    transition: all .3s ease-in;
+}
+
+.download-item__button:hover {
+    box-shadow: 5px 10px 10px -8px rgba(4,72,143,.16);
+}
+
+.download-item__button:active {
+    box-shadow: 0px 5px 11px 0px rgba(0, 43, 88, 0.2) inset;
+}
+
+@media (max-width: 1780px) {
+    .download {
+        flex-direction: column;
+    }
+
+    .download__title {
+        position: relative;
+        margin-bottom: 38px;
+    }
+
+    .download-list {
+        grid-template-columns: repeat(3, 468px);
+        grid-template-rows: repeat(2, 232px);
+        grid-template-areas:
+        "one two three"
+        "four five .";
+        row-gap: 24px;
+        column-gap: 24px;
+    }
+
+    .download-list__item {
+        width: 468px;
+        height: 232px;
+    }
+}
+
+@media (max-width: 1599px) {
+    .download {
+        padding: 0;
+        margin-top: 62px;
+    }
+}
+
+@media (max-width: 1520px) {
+    .download-list {
+        grid-template-columns: repeat(2, 468px);
+        grid-template-rows: repeat(3, 232px);
+        grid-template-areas:
+        "one two"
+        "three four"
+        ". five";
+    }
+}
+
+@media (max-width: 1300px) {
+    .download__title {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .download-item__title {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .download-item__text {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .download-item__button {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 999px) {
+    .download {
+        margin-top: 48px;
+    }
+
+    .download-list {
+        grid-template-columns: repeat(2, 309px);
+        grid-template-rows: repeat(3, 315px);
+        grid-template-areas:
+        "one two"
+        "three four"
+        "five .";
+        column-gap: 22px;
+        row-gap: 20px;
+    }
+
+    .download-list__item {
+        width: 309px;
+        height: 315px;
+    }
+
+    .download-item__button {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .download {
+        margin-top: 40px;
+        align-items: center;
+    }
+
+    .download-list {
+        grid-template-columns: repeat(1, 440px);
+        grid-template-rows: repeat(5, 232px);
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
+        row-gap: 24px;
+    }
+
+    .download-list__item {
+        width: 440px;
+        height: 232px;
+    }
+}
+
+@media (max-width: 468px) {
+    .download__title {
+        margin-bottom: 18px;
+
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .download-item__button {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .download {
+        margin-top: 36px;
+    }
+
+    .download-list {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(5, 251px);
+        column-gap: 5px;
+    }
+
+    .download-list__item {
+        width: 300px;
+        height: 251px;
+    }
 }
