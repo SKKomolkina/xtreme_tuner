@@ -144,11 +144,53 @@
 @media (max-width: 699px) {
     .footer {
         padding: 22px 20px 41px;
+
+        grid-template-columns: repeat(1, auto);
+        grid-template-areas:
+        "logo"
+        "terms"
+        "icons"
+        "copyright";
+        align-items: center;
+    }
+
+    .footer__logo-link {
+        margin: 0 auto;
+    }
+
+    .footer__terms {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .footer__term {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .footer__icons {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer__copyright {
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
 @media (max-width: 468px) {
     .footer {
         padding: 29px 10px 20px;
+    }
+
+    .footer__term {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+        line-height: 17px;
     }
 }
