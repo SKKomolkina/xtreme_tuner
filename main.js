@@ -12697,17 +12697,12 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
-    draggable: true // dragSize: 249,
-    // dragClass: '.swiper-scrollbar-drag',
-
+    draggable: true
   },
   keyboard: {
     enabled: true,
     onlyInViewport: false
   },
-  // mousewheel: {
-  //     invert: false,
-  // },
   breakpoints: {
     1780: {
       slidesPerView: 1,
@@ -12717,10 +12712,7 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
 });
 
 var handleChoseEl = function handleChoseEl(el) {
-  swiper.slideTo(el, 2); // swiper.activeIndex(el);
-
-  console.log(swiper.activeIndex);
-  console.log(el);
+  swiper.slideTo(el, 2);
 };
 
 oneCLickButton.addEventListener('click', function () {
@@ -12734,13 +12726,12 @@ fanButton.addEventListener('click', function () {
 });
 monitoringButton.addEventListener('click', function () {
   handleChoseEl(3);
-}); // console.log(swiper);
-
+});
 var button1 = document.querySelector('#info-button-1');
 var button2 = document.querySelector('#info-button-2');
 var button3 = document.querySelector('#info-button-3');
-var button4 = document.querySelector('#info-button-4');
-var imagesContainer = document.querySelector('.guide-image__wrapper');
+var button4 = document.querySelector('#info-button-4'); // const imagesContainer = document.querySelector('.guide-image__wrapper');
+
 button1.addEventListener('click', function () {
   changeImage();
   document.querySelector('#image-1').classList.remove('guide__image-hidden');
@@ -12762,7 +12753,22 @@ var changeImage = function changeImage() {
   document.querySelectorAll('.guide__image').forEach(function (item) {
     item.classList.add('guide__image-hidden');
   });
-};
+}; //
+
+
+var scrollButtons = document.querySelectorAll('.intro__button_btn');
+var downloadContainer = document.querySelector('.download');
+scrollButtons.forEach(function (button) {
+  return button.addEventListener('click', function () {
+    downloadContainer.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+}); // .forEach((button) => {
+//      button.addEventListener('click', () => {
+//
+//      })
+//  })
 })();
 
 /******/ })()
