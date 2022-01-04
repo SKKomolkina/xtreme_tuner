@@ -1,0 +1,24 @@
+<svg width="699" height="8255" viewBox="0 0 699 8255" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_348_169)">
+<rect width="699" height="8255" fill="white"/>
+<circle opacity="0.03" cx="207" cy="2668" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="637.5" cy="1272.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="-9.5" cy="3346.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="507.5" cy="4233.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="-27.5" cy="3923.5" r="309.5" stroke="#04488F" stroke-width="200"/>
+<circle opacity="0.03" cx="69" cy="2708" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="53" cy="799" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="598" cy="3297" r="15" stroke="#04488F" stroke-width="10"/>
+<circle opacity="0.03" cx="147.5" cy="2825.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<circle opacity="0.03" cx="81.5" cy="485.5" r="48.5" stroke="#04488F" stroke-width="20"/>
+<path d="M744.203 289.678C806.284 277.556 841.109 336.711 849.122 382.06L839.695 438.232L891.883 606.437C883.337 657.36 837.659 704.346 835.898 739.641C834.137 774.937 878.137 786.449 858.645 811.665C778.759 823.114 568.552 908.631 456.626 764.92C333.344 606.63 359.612 402.875 480.273 436.486C706.505 499.504 666.602 304.832 744.203 289.678Z" fill="#04488F"/>
+<g style="mix-blend-mode:screen" opacity="0.07">
+<circle cx="635" cy="669" r="100" stroke="white" stroke-width="50"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_348_169">
+<rect width="699" height="8255" fill="white"/>
+</clipPath>
+</defs>
+</svg>

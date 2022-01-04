@@ -89,9 +89,4 @@ const downloadContainer = document.querySelector('.download');
 scrollButtons.forEach(button => button.addEventListener('click', () => {
     downloadContainer.scrollIntoView({behavior: "smooth"});
 }));
-   // .forEach((button) => {
-   //      button.addEventListener('click', () => {
-   //
-   //      })
-   //  })
 
