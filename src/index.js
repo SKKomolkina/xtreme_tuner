@@ -16,16 +16,11 @@ const swiper = new Swiper(".swiper", {
         el: ".swiper-scrollbar",
         hide: false,
         draggable: true,
-        // dragSize: 249,
-        // dragClass: '.swiper-scrollbar-drag',
     },
     keyboard: {
         enabled: true,
         onlyInViewport: false,
     },
-    // mousewheel: {
-    //     invert: false,
-    // },
     breakpoints: {
         1780: {
             slidesPerView: 1,
@@ -36,9 +31,6 @@ const swiper = new Swiper(".swiper", {
 
 const handleChoseEl = (el) => {
     swiper.slideTo(el, 2);
-    // swiper.activeIndex(el);
-    console.log(swiper.activeIndex);
-    console.log(el);
 }
 
 oneCLickButton.addEventListener('click', () => {
@@ -55,16 +47,14 @@ fanButton.addEventListener('click', () => {
 
 monitoringButton.addEventListener('click', () => {
     handleChoseEl(3);
-})
-
-// console.log(swiper);
+});
 
 const button1 = document.querySelector('#info-button-1');
 const button2 = document.querySelector('#info-button-2');
 const button3 = document.querySelector('#info-button-3');
 const button4 = document.querySelector('#info-button-4');
 
-const imagesContainer = document.querySelector('.guide-image__wrapper');
+// const imagesContainer = document.querySelector('.guide-image__wrapper');
 
 button1.addEventListener('click', () => {
     changeImage();
@@ -91,4 +81,17 @@ const changeImage = () => {
         item.classList.add('guide__image-hidden');
     })
 }
+
+//
+const scrollButtons = document.querySelectorAll('.intro__button_btn');
+const downloadContainer = document.querySelector('.download');
+
+scrollButtons.forEach(button => button.addEventListener('click', () => {
+    downloadContainer.scrollIntoView({behavior: "smooth"});
+}));
+   // .forEach((button) => {
+   //      button.addEventListener('click', () => {
+   //
+   //      })
+   //  })
 
