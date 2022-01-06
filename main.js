@@ -12709,7 +12709,7 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
       spaceBetween: 24
     }
   }
-});
+}); //
 
 var handleChoseEl = function handleChoseEl(el) {
   swiper.slideTo(el, 2);
@@ -12750,6 +12750,7 @@ button4.addEventListener('click', function () {
 });
 
 var changeImage = function changeImage() {
+  button1.classList.remove('guide__button_first-el');
   document.querySelectorAll('.guide__image').forEach(function (item) {
     item.classList.add('guide__image-hidden');
   });
@@ -12764,11 +12765,7 @@ scrollButtons.forEach(function (button) {
       behavior: "smooth"
     });
   });
-}); // .forEach((button) => {
-//      button.addEventListener('click', () => {
-//
-//      })
-//  })
+});
 })();
 
 /******/ })()
