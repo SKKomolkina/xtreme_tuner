@@ -29,6 +29,7 @@ const swiper = new Swiper(".swiper", {
     }
 });
 
+//
 const handleChoseEl = (el) => {
     swiper.slideTo(el, 2);
 }
@@ -77,9 +78,11 @@ button4.addEventListener('click', () => {
 });
 
 const changeImage = () => {
+    button1.classList.remove('guide__button_first-el');
+
     document.querySelectorAll('.guide__image').forEach((item) => {
         item.classList.add('guide__image-hidden');
-    })
+    });
 }
 
 //
