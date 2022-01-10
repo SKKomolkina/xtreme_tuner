@@ -12696,8 +12696,8 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
   modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Keyboard, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination],
   scrollbar: {
     el: ".swiper-scrollbar",
-    hide: false,
-    draggable: true
+    draggable: true,
+    dragSize: "auto"
   },
   keyboard: {
     enabled: true,
@@ -12764,23 +12764,29 @@ var button3 = document.querySelector('#info-button-3');
 var button4 = document.querySelector('#info-button-4');
 button1.addEventListener('click', function () {
   changeImage();
+  button1.classList.add('guide__button_active');
   document.querySelector('#image-1').classList.remove('guide__image-hidden');
 });
 button2.addEventListener('click', function () {
   changeImage();
+  button2.classList.add('guide__button_active');
   document.querySelector('#image-2').classList.remove('guide__image-hidden');
 });
 button3.addEventListener('click', function () {
   changeImage();
+  button3.classList.add('guide__button_active');
   document.querySelector('#image-3').classList.remove('guide__image-hidden');
 });
 button4.addEventListener('click', function () {
   changeImage();
+  button4.classList.add('guide__button_active');
   document.querySelector('#image-4').classList.remove('guide__image-hidden');
 });
 
 var changeImage = function changeImage() {
-  button1.classList.remove('guide__button_first-el');
+  document.querySelectorAll('.guide__button').forEach(function (item) {
+    item.classList.remove('guide__button_active');
+  });
   document.querySelectorAll('.guide__image').forEach(function (item) {
     item.classList.add('guide__image-hidden');
   });
