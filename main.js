@@ -12689,6 +12689,7 @@ var oneCLickButton = document.querySelector('#one');
 var rgbButton = document.querySelector('#rgb');
 var fanButton = document.querySelector('#fan');
 var monitoringButton = document.querySelector('#monitoring');
+var swiperContainer = document.querySelector('.swiper');
 var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
   slidesPerView: 1.5,
   spaceBetween: 16,
@@ -12711,10 +12712,39 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
 });
 
 var handleChoseEl = function handleChoseEl(el) {
-  oneCLickButton.classList.remove('slider__button_first-el');
   swiper.slideTo(el, 2);
 };
 
+swiper.on('activeIndexChange', function () {
+  console.log(swiper.activeIndex);
+  var buttons = [oneCLickButton, rgbButton, fanButton, monitoringButton];
+
+  var removeClassList = function removeClassList() {
+    buttons.forEach(function (item) {
+      item.classList.remove('slider__button_active');
+    });
+  };
+
+  if (swiper.activeIndex === 0) {
+    removeClassList();
+    oneCLickButton.classList.add('slider__button_active');
+  }
+
+  if (swiper.activeIndex === 1) {
+    removeClassList();
+    rgbButton.classList.add('slider__button_active');
+  }
+
+  if (swiper.activeIndex === 2) {
+    removeClassList();
+    fanButton.classList.add('slider__button_active');
+  }
+
+  if (swiper.activeIndex === 3) {
+    removeClassList();
+    monitoringButton.classList.add('slider__button_active');
+  }
+});
 oneCLickButton.addEventListener('click', function () {
   handleChoseEl(0);
 });
