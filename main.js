@@ -12696,8 +12696,8 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
   modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Keyboard, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination],
   scrollbar: {
     el: ".swiper-scrollbar",
-    hide: false,
-    draggable: true
+    draggable: true,
+    dragSize: "auto"
   },
   keyboard: {
     enabled: true,
