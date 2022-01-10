@@ -7,6 +7,8 @@ const rgbButton = document.querySelector('#rgb');
 const fanButton = document.querySelector('#fan');
 const monitoringButton = document.querySelector('#monitoring');
 
+const swiperContainer = document.querySelector('.swiper');
+
 const swiper = new Swiper(".swiper", {
     slidesPerView: 1.5,
     spaceBetween: 16,
@@ -29,9 +31,37 @@ const swiper = new Swiper(".swiper", {
 });
 
 const handleChoseEl = (el) => {
-    oneCLickButton.classList.remove('slider__button_first-el');
     swiper.slideTo(el, 2);
 }
+
+swiper.on('activeIndexChange', () => {
+    console.log(swiper.activeIndex);
+    const buttons = [oneCLickButton, rgbButton, fanButton, monitoringButton];
+
+    const removeClassList = () => {
+        buttons.forEach(item => {
+            item.classList.remove('slider__button_active');
+        });
+    }
+
+    if (swiper.activeIndex === 0) {
+        removeClassList();
+        oneCLickButton.classList.add('slider__button_active');
+    }
+    if (swiper.activeIndex === 1) {
+        removeClassList();
+        rgbButton.classList.add('slider__button_active');
+    }
+    if (swiper.activeIndex === 2) {
+        removeClassList();
+        fanButton.classList.add('slider__button_active');
+    }
+    if (swiper.activeIndex === 3) {
+        removeClassList();
+        monitoringButton.classList.add('slider__button_active');
+    }
+
+})
 
 oneCLickButton.addEventListener('click', () => {
     handleChoseEl(0);
@@ -42,7 +72,7 @@ rgbButton.addEventListener('click', () => {
 });
 
 fanButton.addEventListener('click', () => {
-    handleChoseEl(2)
+    handleChoseEl(2);
 });
 
 monitoringButton.addEventListener('click', () => {
