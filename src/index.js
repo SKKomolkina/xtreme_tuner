@@ -15,8 +15,8 @@ const swiper = new Swiper(".swiper", {
     modules: [Scrollbar, Keyboard, Mousewheel, Pagination],
     scrollbar: {
         el: ".swiper-scrollbar",
-        hide: false,
         draggable: true,
+        dragSize: "auto",
     },
     keyboard: {
         enabled: true,
