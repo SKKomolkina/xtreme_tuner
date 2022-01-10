@@ -1,6 +1,7 @@
 import './index.css';
-import Swiper, { Scrollbar, Keyboard, Mousewheel } from "swiper";
+import Swiper, {Scrollbar, Keyboard, Mousewheel, Pagination} from "swiper";
 
+//SWIPER
 const oneCLickButton = document.querySelector('#one');
 const rgbButton = document.querySelector('#rgb');
 const fanButton = document.querySelector('#fan');
@@ -8,10 +9,8 @@ const monitoringButton = document.querySelector('#monitoring');
 
 const swiper = new Swiper(".swiper", {
     slidesPerView: 1.5,
-    // loop: true,
     spaceBetween: 16,
-    modules: [Scrollbar, Keyboard, Mousewheel],
-    // freeMode: true,
+    modules: [Scrollbar, Keyboard, Mousewheel, Pagination],
     scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
@@ -26,11 +25,11 @@ const swiper = new Swiper(".swiper", {
             slidesPerView: 1,
             spaceBetween: 24,
         }
-    }
+    },
 });
 
-//
 const handleChoseEl = (el) => {
+    oneCLickButton.classList.remove('slider__button_first-el');
     swiper.slideTo(el, 2);
 }
 
@@ -50,12 +49,11 @@ monitoringButton.addEventListener('click', () => {
     handleChoseEl(3);
 });
 
+// INSTRUCTION
 const button1 = document.querySelector('#info-button-1');
 const button2 = document.querySelector('#info-button-2');
 const button3 = document.querySelector('#info-button-3');
 const button4 = document.querySelector('#info-button-4');
-
-// const imagesContainer = document.querySelector('.guide-image__wrapper');
 
 button1.addEventListener('click', () => {
     changeImage();
@@ -85,7 +83,7 @@ const changeImage = () => {
     });
 }
 
-//
+// SCROLL TO DOWNLOAD
 const scrollButtons = document.querySelectorAll('.intro__button_btn');
 const downloadContainer = document.querySelector('.download');
 
