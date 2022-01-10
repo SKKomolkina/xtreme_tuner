@@ -87,26 +87,32 @@ const button4 = document.querySelector('#info-button-4');
 
 button1.addEventListener('click', () => {
     changeImage();
+    button1.classList.add('guide__button_active');
     document.querySelector('#image-1').classList.remove('guide__image-hidden');
 });
 
 button2.addEventListener('click', () => {
     changeImage();
+    button2.classList.add('guide__button_active');
     document.querySelector('#image-2').classList.remove('guide__image-hidden');
 });
 
 button3.addEventListener('click', () => {
     changeImage();
+    button3.classList.add('guide__button_active');
     document.querySelector('#image-3').classList.remove('guide__image-hidden');
 });
 
 button4.addEventListener('click', () => {
     changeImage();
+    button4.classList.add('guide__button_active');
     document.querySelector('#image-4').classList.remove('guide__image-hidden');
 });
 
 const changeImage = () => {
-    button1.classList.remove('guide__button_first-el');
+    document.querySelectorAll('.guide__button').forEach(item => {
+        item.classList.remove('guide__button_active');
+    });
 
     document.querySelectorAll('.guide__image').forEach((item) => {
         item.classList.add('guide__image-hidden');

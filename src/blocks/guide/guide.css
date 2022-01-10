@@ -128,7 +128,7 @@
     /*transition: all .3s ease-in;*/
 }
 
-.guide__button_first-el {
+.guide__button_active {
     background: linear-gradient(to top left, rgba(4, 72, 143, 1), rgba(26, 102, 181, 1));
 }
 

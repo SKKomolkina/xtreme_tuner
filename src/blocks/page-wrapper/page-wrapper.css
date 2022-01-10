@@ -9,7 +9,7 @@
     background: url('../../images/img/1922-back.svg') no-repeat right top;
     background-size: 100%;
 
-    transition: all .3s ease-in;
+    /*transition: all .3s ease-in;*/
 }
 
 @media (min-width: 1980px) {
@@ -35,7 +35,7 @@
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1030px) {
     .page-wrapper {
         padding-right: 64px;
         padding-left: 64px;
