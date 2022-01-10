@@ -12683,6 +12683,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
+ //SWIPER
 
 var oneCLickButton = document.querySelector('#one');
 var rgbButton = document.querySelector('#rgb');
@@ -12690,10 +12691,8 @@ var fanButton = document.querySelector('#fan');
 var monitoringButton = document.querySelector('#monitoring');
 var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
   slidesPerView: 1.5,
-  // loop: true,
   spaceBetween: 16,
-  modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Keyboard, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel],
-  // freeMode: true,
+  modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Keyboard, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination],
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
@@ -12709,9 +12708,10 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
       spaceBetween: 24
     }
   }
-}); //
+});
 
 var handleChoseEl = function handleChoseEl(el) {
+  oneCLickButton.classList.remove('slider__button_first-el');
   swiper.slideTo(el, 2);
 };
 
@@ -12726,12 +12726,12 @@ fanButton.addEventListener('click', function () {
 });
 monitoringButton.addEventListener('click', function () {
   handleChoseEl(3);
-});
+}); // INSTRUCTION
+
 var button1 = document.querySelector('#info-button-1');
 var button2 = document.querySelector('#info-button-2');
 var button3 = document.querySelector('#info-button-3');
-var button4 = document.querySelector('#info-button-4'); // const imagesContainer = document.querySelector('.guide-image__wrapper');
-
+var button4 = document.querySelector('#info-button-4');
 button1.addEventListener('click', function () {
   changeImage();
   document.querySelector('#image-1').classList.remove('guide__image-hidden');
@@ -12754,7 +12754,7 @@ var changeImage = function changeImage() {
   document.querySelectorAll('.guide__image').forEach(function (item) {
     item.classList.add('guide__image-hidden');
   });
-}; //
+}; // SCROLL TO DOWNLOAD
 
 
 var scrollButtons = document.querySelectorAll('.intro__button_btn');
