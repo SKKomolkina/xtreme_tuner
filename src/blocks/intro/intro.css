@@ -173,7 +173,7 @@
     }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 990px) {
     .intro__image {
         max-width: 960px;
 
@@ -221,7 +221,11 @@
     }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 739px) {
+    .intro-text__wrapper {
+        max-width: 439px;
+    }
+
     .intro {
         margin-bottom: 58px;
     }
@@ -245,6 +249,10 @@
         right: -199px;
         top: 425px;
     }
+
+    .intro-button__wrapper_right {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 468px) {
@@ -253,6 +261,10 @@
         margin-bottom: 36px;
 
         min-height: 749px;
+    }
+
+    .intro-text__wrapper {
+        max-width: 300px;
     }
 
     .intro__subtitle {

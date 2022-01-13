@@ -20,7 +20,7 @@
         </p>
     </header>
 
-    <main>
+    <main class="page-wrapper__main">
         <section class="intro">
             <div class="intro-text__wrapper">
                 <h2 class="intro__subtitle">Твой стиль игры</h2>
@@ -176,53 +176,63 @@
             <div class="swiper-mini">
                 <ul class="swiper__wrapper swiper-wrapper">
                     <li id="oneSlide-mini" class="swiper__item swiper-slide">
-                        <div class="swiper-text__wrapper">
-                            <h4 class="swiper__title">Разгон 1-Click OC</h4>
-                            <p class="swiper__text">
-                                Разгон видеокарты в один клик в безопасных пределах.
-                                Простой способ увеличить игровую производительность без необходимости
-                                изучения тонкостей оверклокинга. Ручной разгон по-прежнему доступен для профессионалов.
-                            </p>
+                        <div class="swiper-mini__wrapper">
+                            <div class="swiper-text__wrapper">
+                                <h4 class="swiper__title">Разгон 1-Click OC</h4>
+                                <p class="swiper__text">
+                                    Разгон видеокарты в один клик в безопасных пределах.
+                                    Простой способ увеличить игровую производительность без необходимости
+                                    изучения тонкостей оверклокинга. Ручной разгон по-прежнему доступен для
+                                    профессионалов.
+                                </p>
+                            </div>
+                            <img id="slide-1-mini" src="<%=require('./images/img/Слайд 3 1 1920.png')%>"
+                                 class="swiper__image">
                         </div>
-                        <img id="slide-1-mini" src="<%=require('./images/img/Слайд 3 1 1920.png')%>"
-                             class="swiper__image">
                     </li>
 
                     <li id="rgbSlide-mini" class="swiper__item swiper-slide">
-                        <div class="swiper-text__wrapper">
-                            <h4 class="swiper__title">Настройка RGB</h4>
-                            <p class="swiper__text">
-                                Кастомизация системы под себя – управление режимами и цветовыми
-                                схемами подсветки вентиляторов и прочих зон с RGB элементами
-                                (в зависимости от модели видеокарты), синхронизация режимов подсветки с другими
-                                продуктами KFA2/GALAX и фирменным маскотом HOF Links.
-                            </p>
+                        <div class="swiper-mini__wrapper">
+                            <div class="swiper-text__wrapper">
+                                <h4 class="swiper__title">Настройка RGB</h4>
+                                <p class="swiper__text">
+                                    Кастомизация системы под себя – управление режимами и цветовыми
+                                    схемами подсветки вентиляторов и прочих зон с RGB элементами
+                                    (в зависимости от модели видеокарты), синхронизация режимов подсветки с другими
+                                    продуктами KFA2/GALAX и фирменным маскотом HOF Links.
+                                </p>
+                            </div>
+                            <img id="slide-2-mini" src="<%=require('./images/img/Слайд 3 3.png')%>"
+                                 class="swiper__image">
                         </div>
-                        <img id="slide-2-mini" src="<%=require('./images/img/Слайд 3 3.png')%>" class="swiper__image">
                     </li>
 
                     <li id="fanSlide-mini" class="swiper__item swiper-slide">
-                        <div class="swiper-text__wrapper">
-                            <h4 class="swiper__title">Работа вентиляторов</h4>
-                            <p class="swiper__text">
-                                Раздельное управление кривыми вентиляторов для продвинутых пользователей.
-                            </p>
+                        <div class="swiper-mini__wrapper">
+                            <div class="swiper-text__wrapper">
+                                <h4 class="swiper__title">Работа вентиляторов</h4>
+                                <p class="swiper__text">
+                                    Раздельное управление кривыми вентиляторов для продвинутых пользователей.
+                                </p>
+                            </div>
+                            <img id="slide-3-mini" src="<%=require('./images/img/Слайд 2 3 1920.png')%>"
+                                 class="swiper__image">
                         </div>
-                        <img id="slide-3-mini" src="<%=require('./images/img/Слайд 2 3 1920.png')%>"
-                             class="swiper__image">
                     </li>
 
                     <li id="monitoringSlide-mini" class="swiper__item swiper-slide">
-                        <div class="swiper-text__wrapper">
-                            <h4 class="swiper__title">Мониторинг</h4>
-                            <p class="swiper__text">
-                                Отслеживание параметров системы с мобильного устройства позволяет
-                                точно определить и зафиксировать показатели в конкретный момент
-                                времени без необходимости свёртывания активных приложений.
-                            </p>
+                        <div class="swiper-mini__wrapper">
+                            <div class="swiper-text__wrapper">
+                                <h4 class="swiper__title">Мониторинг</h4>
+                                <p class="swiper__text">
+                                    Отслеживание параметров системы с мобильного устройства позволяет
+                                    точно определить и зафиксировать показатели в конкретный момент
+                                    времени без необходимости свёртывания активных приложений.
+                                </p>
+                            </div>
+                            <img id="slide-4-mini" src="<%=require('./images/img/Слайд 3 4 1920.png')%>"
+                                 class="swiper__image">
                         </div>
-                        <img id="slide-4-mini" src="<%=require('./images/img/Слайд 3 4 1920.png')%>"
-                             class="swiper__image">
                     </li>
                 </ul>
             </div>
@@ -455,33 +465,35 @@
 </div>
 
 <footer class="footer">
-    <a class="footer__logo-link" href="https://www.kfa2.com/kfa2_ru/" target="_blank">
-        <img src="<%=require('./images/Icons/logo-footer.svg')%>" alt="KFA2" class="footer__logo">
-    </a>
+    <div class="footer-grid">
+        <a class="footer__logo-link" href="https://www.kfa2.com/kfa2_ru/" target="_blank">
+            <img src="<%=require('./images/Icons/logo-footer.svg')%>" alt="KFA2" class="footer__logo">
+        </a>
 
-    <ul class="footer__icons">
-        <li class="footer__icons-item">
-            <a href="https://vk.com/kfa2ru" target="_blank" class="footer-icon__link">
-                <img class="footer-icon__image" src="<%=require('./images/Icons/Vk logo.svg')%>">
-            </a>
-        </li>
-        <li class="footer__icons-item">
-            <a href="https://www.instagram.com/kfa2ru/" target="_blank" class="footer-icon__link">
-                <img class="footer-icon__image" src="<%=require('./images/Icons/INSTA_LOGO.svg')%>">
-            </a>
-        </li>
-        <li class="footer__icons-item">
-            <a href="https://www.tiktok.com/@kfa2ru?lang=ru-RU" target="_blank" class="footer-icon__link">
-                <img class="footer-icon__image" src="<%=require('./images/Icons/tiktok.svg')%>">
-            </a>
-        </li>
-    </ul>
+        <ul class="footer__icons">
+            <li class="footer__icons-item">
+                <a href="https://vk.com/kfa2ru" target="_blank" class="footer-icon__link">
+                    <img class="footer-icon__image" src="<%=require('./images/Icons/Vk logo.svg')%>">
+                </a>
+            </li>
+            <li class="footer__icons-item">
+                <a href="https://www.instagram.com/kfa2ru/" target="_blank" class="footer-icon__link">
+                    <img class="footer-icon__image" src="<%=require('./images/Icons/INSTA_LOGO.svg')%>">
+                </a>
+            </li>
+            <li class="footer__icons-item">
+                <a href="https://www.tiktok.com/@kfa2ru?lang=ru-RU" target="_blank" class="footer-icon__link">
+                    <img class="footer-icon__image" src="<%=require('./images/Icons/tiktok.svg')%>">
+                </a>
+            </li>
+        </ul>
 
-    <p class="footer__copyright">© 2022 KFA2 Россия. Все права защищены.</p>
+        <p class="footer__copyright">© 2022 KFA2 Россия. Все права защищены.</p>
 
-    <div class="footer__terms">
-        <a href="https://vk.com/kfa2ru" class="footer__term">Условия использования</a>
-        <a href="https://vk.com/kfa2ru" class="footer__term">Политика конфиденциальности</a>
+        <div class="footer__terms">
+            <a href="https://vk.com/kfa2ru" class="footer__term">Условия использования</a>
+            <a href="https://vk.com/kfa2ru" class="footer__term">Политика конфиденциальности</a>
+        </div>
     </div>
 </footer>
 </body>

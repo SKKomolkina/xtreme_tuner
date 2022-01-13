@@ -1,6 +1,14 @@
 .footer {
-    padding: 84px 18.75% 71px;
+    padding-top: 84px;
+    padding-bottom: 71px;
     max-width: 100%;
+
+    background-color: #222222;
+}
+
+.footer-grid {
+    margin: 0 auto;
+    max-width: 1199px;
 
     display: grid;
     grid-template-columns: auto 589px;
@@ -11,8 +19,6 @@
     row-gap: 50px;
 
     align-items: start;
-
-    background-color: #222222;
 }
 
 .footer__logo {
@@ -102,13 +108,26 @@
 
 @media (max-width: 1780px) {
     .footer {
-        padding-left: 20px;
-        padding-right: 20px;
+        /*padding-left: 20px;*/
+        /*padding-right: 20px;*/
         padding-bottom: 69px;
+    }
+
+    .footer__terms {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .footer__term:first-child {
+        margin-bottom: 22px;
     }
 }
 
 @media (max-width: 1300px) {
+    .footer-grid {
+        max-width: 960px;
+    }
+
     .footer__term {
         margin-left: 29px;
     }
@@ -126,25 +145,23 @@
 
 @media (max-width: 990px) {
     .footer {
-        padding: 58px 64px 55px;
+        padding-top: 58px;
+        padding-bottom: 55px;
+    }
 
+    .footer-grid {
+        max-width: 640px;
         grid-template-columns: auto auto;
-    }
-
-    .footer__terms {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .footer__term:first-child {
-        margin-bottom: 22px;
     }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 739px) {
     .footer {
-        padding: 22px 20px 41px;
+        padding-top: 22px;
+        padding-bottom: 41px;
+    }
 
+    .footer-grid {
         grid-template-columns: repeat(1, auto);
         grid-template-areas:
         "logo"
@@ -181,7 +198,10 @@
 
 @media (max-width: 468px) {
     .footer {
-        padding: 29px 10px 20px;
+    }
+
+    .footer-grid {
+        max-width: 300px;
     }
 
     .footer__term {

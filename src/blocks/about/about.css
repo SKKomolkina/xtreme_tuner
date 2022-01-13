@@ -154,7 +154,17 @@
     }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 739px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__icons {
+        max-width: 439px;
+    }
+
     .about-text__wrapper {
         max-width: 381px;
     }
@@ -204,6 +214,7 @@
     .about {
         margin-bottom: 17px;
     }
+
     .about__title {
         max-width: 286px;
 
@@ -217,6 +228,7 @@
     }
 
     .about__icons {
+        max-width: 300px;
         margin-top: 26px;
     }
 
