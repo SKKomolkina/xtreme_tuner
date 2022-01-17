@@ -1,7 +1,7 @@
 .download {
     padding-top: 14px;
     margin-bottom: 75px;
-    max-width: 100%;
+    max-width: 1199px;
 
     position: relative;
 
@@ -26,13 +26,13 @@
 .download-list {
     margin: 0;
     padding: 0;
-    /*max-width: 100%;*/
+    width: 100%;
 
     list-style-type: none;
 
     display: grid;
-    grid-template-columns: repeat(3, 387px);
-    grid-template-rows: repeat(2, 232px);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto auto);
     grid-template-areas:
     ". one two"
     "three four five";
@@ -61,17 +61,28 @@
 }
 
 .download-list__item {
-    padding: 24px 24px 21px;
-    width: 387px;
+    max-width: 387px;
     height: 232px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: #969696 1px solid;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
+.download-item__flex {
+    padding: 24px;
+    width: 100%;
+    height: 100%;
 
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-
-    border: #969696 1px solid;
-    border-radius: 6px;
 
     box-sizing: border-box;
 }
@@ -132,8 +143,19 @@
         margin-bottom: 38px;
     }
 
+
+}
+
+@media (max-width: 1599px) {
+    .download {
+        padding: 0;
+        margin-top: 62px;
+    }
+}
+
+@media (max-width: 1299px) {
     .download-list {
-        grid-template-columns: repeat(2, 468px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 232px);
         grid-template-areas:
         "one two"
@@ -144,28 +166,14 @@
     }
 
     .download-list__item {
-        width: 468px;
+        max-width: 100%;
         height: 232px;
     }
-}
 
-@media (max-width: 1599px) {
-    .download {
-        padding: 0;
-        margin-top: 62px;
+    .download-item__flex {
+        max-width: 468px;
     }
 }
-
-/*@media (max-width: 1520px) {*/
-/*    .download-list {*/
-/*        grid-template-columns: repeat(2, 468px);*/
-/*        grid-template-rows: repeat(3, 232px);*/
-/*        grid-template-areas:*/
-/*        "one two"*/
-/*        "three four"*/
-/*        ". five";*/
-/*    }*/
-/*}*/
 
 @media (max-width: 1300px) {
     .download__title {
@@ -189,13 +197,13 @@
     }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 990px) {
     .download {
         margin-top: 48px;
     }
 
     .download-list {
-        grid-template-columns: repeat(2, 309px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 315px);
         grid-template-areas:
         "one two"
@@ -206,8 +214,12 @@
     }
 
     .download-list__item {
-        width: 309px;
-        height: 315px;
+       height: 100%;
+    }
+
+    .download-item__flex {
+        padding-top: 50px;
+        padding-bottom: 44px;
     }
 
     .download-item__button {
@@ -235,9 +247,17 @@
         row-gap: 24px;
     }
 
+    .download-item__flex {
+        padding: 24px;
+    }
+
     .download-list__item {
         width: 440px;
         height: 232px;
+    }
+
+    .download-item__button {
+        align-self: flex-end;
     }
 }
 
@@ -256,6 +276,7 @@
 
     .download {
         margin-top: 36px;
+        max-width: 300px;
     }
 
     .download-list {

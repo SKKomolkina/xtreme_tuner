@@ -31,7 +31,10 @@
 }
 
 .slider__button {
-    padding: 23px 36px;
+    width: 274px;
+    /*padding: 23px 36px;*/
+    padding-top: 23px;
+    padding-bottom: 23px;
 
     background-color: #A3B1D7;
     color: #fff;
@@ -192,6 +195,10 @@
         align-items: flex-start;
         /*min-width: 100%;*/
         /*max-width: 100%;*/
+    }
+
+    .slider__button {
+        width: 215px;
     }
 
     .swiper {
