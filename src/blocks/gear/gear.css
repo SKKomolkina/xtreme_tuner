@@ -1,0 +1,267 @@
+.gear {
+    margin-bottom: 75px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+    "image title"
+    "image text";
+}
+
+.gear__image {
+    margin-right: 22px;
+    max-width: 690px;
+    max-height: 750px;
+
+    grid-area: image;
+}
+
+.gear-title__wrapper {
+    grid-area: title;
+
+    align-self: end;
+}
+
+.gear-text__wrapper {
+    grid-area: text;
+}
+
+.gear__title {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: #222222;
+}
+
+.gear__subtitle {
+    margin: 0 0 18px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: #04488F;
+}
+
+.gear__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222222;
+}
+
+.gear__text_first-el {
+    margin-bottom: 57px;
+}
+
+.gear-button__wrapper {
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gear__button {
+    font-weight: 400;
+    /*text-align: center;*/
+    justify-content: center;
+}
+
+.gear__link {
+    margin-top: 16px;
+    margin-left: 37px;
+
+    color: #717171;
+    text-decoration: underline;
+}
+
+@media (max-width: 1299px) {
+    .gear {
+        margin-top: 57px;
+        justify-items: center;
+        /*align-items: center;*/
+    }
+
+    .gear__image {
+        margin-right: 24px;
+        max-width: 468px;
+        max-height: 509px;
+    }
+
+    .gear-title__wrapper {
+        align-self: end;
+    }
+
+    .gear-text__wrapper {
+        margin-top: 27px;
+    }
+
+    .gear__title {
+        margin-bottom: 8px;
+
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .gear__subtitle {
+        /*margin-bottom: 27px;*/
+        margin-bottom: 0;
+
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .gear__text {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .gear__link {
+        margin-top: 22px;
+    }
+}
+
+@media (max-width: 990px) {
+    .gear {
+        grid-template-areas:
+    "image title"
+    "text text";
+    }
+
+    .gear__image {
+        max-width: 307px;
+        max-height: 334px;
+    }
+
+    .gear-title__wrapper {
+        align-self: center;
+    }
+
+    .gear__title {
+    }
+
+    .gear__subtitle {
+    }
+
+    .gear-text__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .gear__text {
+        max-width: 468px;
+
+        text-align: center;
+    }
+
+    .gear__text_first-el {
+        max-width: 100%;
+
+        margin-bottom: 39px;
+    }
+
+    .gear-button__wrapper {
+        margin-top: 22px;
+        align-items: center;
+    }
+
+    .gear__button {
+        margin-bottom: 0;
+        align-self: center;
+    }
+
+    .gear__link {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 739px) {
+    .gear {
+        margin: 0 auto;
+        max-width: 440px;
+
+        grid-template-areas:
+        "image"
+        "title"
+        "text";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .gear__image {
+        margin: 0 0 10px;
+
+        max-width: 307px;
+        max-height: 334px;
+    }
+
+    .gear-text__wrapper {
+        margin-top: 62px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .gear__text_first-el{
+        margin-bottom: 48px;
+    }
+
+    .gear__text {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .gear__title {
+        text-align: center;
+
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .gear__subtitle {
+        text-align: center;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .gear-button__wrapper {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 469px) {
+    .gear {
+        margin-top: 40px;
+        margin-bottom: 4px;
+        max-width: 300px;
+    }
+
+    .gear__button {
+        /*text-align: right;*/
+    }
+
+    .gear__image {
+        max-width: 300px;
+        max-height: 327px;
+    }
+
+    .gear-text__wrapper {
+        margin-top: 17px;
+    }
+
+    .gear__text_first-el {
+        margin-bottom: 36px;
+    }
+
+    .gear-button__wrapper {
+        margin-top: 22px;
+    }
+}

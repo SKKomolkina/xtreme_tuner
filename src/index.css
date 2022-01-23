@@ -20,6 +20,8 @@
 
 @import url(./blocks/guide/guide.css);
 
+@import url(./blocks/gear/gear.css);
+
 @import url(./blocks/download/download.css);
 
 @import url(./blocks/footer/footer.css);
