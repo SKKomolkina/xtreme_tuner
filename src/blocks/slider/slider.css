@@ -69,7 +69,7 @@
     margin-top: 117px;
     /*min-width: 100vw;*/
     /*width: max-content;*/
-    width: 899px;
+    width: 1099px;
 }
 
 .swiper-mini {
@@ -163,8 +163,8 @@
 
 /*ID*/
 #oneSlide img {
-    top: -112px;
-    right: -2px;
+    right: -1px;
+    top: 20px;
 }
 
 #rgbSlide img {
@@ -186,7 +186,7 @@
 
 @media (max-width: 1780px) {
     .swiper {
-        width: 1300px;
+        width: 1057px;
     }
 }
 
@@ -198,11 +198,15 @@
     }
 
     .slider__button {
-        width: 215px;
+        width: 222px;
     }
 
     .swiper {
-        width: 1100px;
+        /*width: 1100px;*/
+        /*width: 738px;*/
+        /*width: 960px;*/
+        /*width: 1200px;*/
+        width: 863px;
     }
 
     .swiper__wrapper {
@@ -247,9 +251,9 @@
     }
 
     #oneSlide img {
-        right: -73px;
-        top: -113px;
-        width: 422px;
+        right: 0;
+        top: 52px;
+        width: 394px;
     }
 
     #fanSlide img {
@@ -343,9 +347,9 @@
     }
 
     #slide-1-mini {
-        top: -93px;
-        max-width: 416px;
-        right: -99px;
+        max-width: 358px;
+        right: 0;
+        top: 63px;
     }
 
     #slide-2-mini {
@@ -447,9 +451,9 @@
     }
 
     #slide-1-mini {
-        max-width: 340px;
-        right: -131px;
-        top: 1px;
+        max-width: 395px;
+        right: -187px;
+        top: 41px;
     }
 
     #slide-2-mini {
@@ -517,9 +521,9 @@
     }
 
     #slide-1-mini {
-        max-width: 237px;
-        left: 151px;
-        top: 62px;
+        left: 88px;
+        max-width: 299px;
+        top: 82px;
     }
 
     #rgbSlide-mini {
@@ -558,7 +562,7 @@
 
 @media (max-width: 421px) {
     #slide-1-mini {
-        left: 141px;
+        left: 64px;
     }
     #slide-2-mini {
         right: -4px;
@@ -573,15 +577,15 @@
 
 @media (max-width: 361px) {
     #slide-1-mini {
-        left: 111px;
+        left: 16px;
     }
     #slide-2-mini {
-        right: -33px;
+        right: -55px;
     }
     #slide-3-mini {
-        right: 8px;
+        right: -13px;
     }
     #slide-4-mini {
-        right: -137px;
+        right: -158px;
     }
 }

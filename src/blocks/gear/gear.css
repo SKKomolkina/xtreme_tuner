@@ -70,6 +70,31 @@
     font-weight: 400;
     /*text-align: center;*/
     justify-content: center;
+
+    margin: 0;
+    padding: 23px 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #04488f;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: all .3s ease-in;
+}
+
+.gear__button:hover {
+    box-shadow: 5px 17px 33px -8px rgba(4, 72, 143, 0.16);
+}
+
+.gear__button:active {
+    box-shadow: 0px 11px 27px 0px rgba(0, 43, 88, 0.82) inset;
 }
 
 .gear__link {
@@ -77,6 +102,10 @@
     margin-left: 37px;
 
     color: #717171;
+    transition: all .3s ease-in;
+}
+
+.gear__link:hover {
     text-decoration: underline;
 }
 
@@ -119,6 +148,12 @@
     .gear__text {
         font-size: 12px;
         line-height: 17px;
+    }
+
+    .gear__button {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
     }
 
     .gear__link {

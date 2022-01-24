@@ -10,8 +10,8 @@ const monitoringButton = document.querySelector('#monitoring');
 const swiperContainer = document.querySelector('.swiper');
 
 const swiper = new Swiper(".swiper", {
-    slidesPerView: 1.5,
-    spaceBetween: 16,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
     modules: [Scrollbar, Keyboard, Mousewheel, Pagination],
     scrollbar: {
         el: ".swiper-scrollbar",
@@ -24,8 +24,8 @@ const swiper = new Swiper(".swiper", {
     },
     breakpoints: {
         1780: {
-            slidesPerView: 1,
-            spaceBetween: 24,
+            // slidesPerView: 1.2,
+            spaceBetween: 22,
         }
     },
 });
