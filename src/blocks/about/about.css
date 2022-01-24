@@ -49,8 +49,9 @@
 }
 
 .about__icons-item {
-    /*max-width: 266px;*/
-    margin-right: 45px;
+    margin-right: 44px;
+    max-height: 78px;
+    max-width: 264px;
 
     display: flex;
     flex-direction: row;
@@ -99,7 +100,9 @@
 
     .about__icons-item {
         /*max-width: 205px;*/
-        margin-right: 20px;
+        margin-right: 24px;
+        max-height: 51px;
+        max-width: 222px;
     }
 
     .about__icons-item:last-child {
@@ -148,6 +151,7 @@
     .about__icons-item {
         margin-right: 22px;
         max-width: 144px;
+        max-height: 130px;
 
         flex-direction: column;
         align-items: flex-start;
