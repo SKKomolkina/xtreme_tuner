@@ -1,5 +1,6 @@
 .info {
     padding-top: 69px;
+    margin-bottom: 24px;
     /*width: 1464px;*/
 
     /*background: url('../../images/img/Rectangle-big-gray.svg') no-repeat top center;*/
@@ -17,7 +18,7 @@
 .info-banner {
     position: relative;
 
-    margin: 64px 21% 24px -163px;
+    margin: 75px 21% 0 -163px;
     width: 1482px;
     min-height: 714px;
 
@@ -121,11 +122,16 @@
 
 @media (max-width: 1599px) {
     .info-banner {
-        margin: 73px 0 0;
+        margin: 75px 0 0;
+        margin-bottom: 0;
     }
 }
 
 @media (max-width: 1300px) {
+    .info {
+        margin-bottom: 57px;
+    }
+
     .info__wrapper {
         padding: 0;
         min-width: 960px;
@@ -147,14 +153,18 @@
 }
 
 @media (max-width: 990px) {
+    .info {
+        margin-bottom: 75px;
+    }
+
     .info__wrapper {
         min-width: 640px;
         max-width: 640px;
     }
 
     .info-banner {
-        margin-bottom: 48px;
-        margin-top: 40px;
+        margin-bottom: 0;
+        margin-top: 41px;
 
         width: 643px;
         min-height: 759px;
@@ -188,11 +198,12 @@
         position: relative;
         background: none;
         max-width: 100%;
+        margin-bottom: 40px;
     }
 
     .info-banner {
         margin-left: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0;
     }
 }
 
