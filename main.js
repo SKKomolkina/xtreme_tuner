@@ -12691,8 +12691,8 @@ var fanButton = document.querySelector('#fan');
 var monitoringButton = document.querySelector('#monitoring');
 var swiperContainer = document.querySelector('.swiper');
 var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
-  slidesPerView: 1.5,
-  spaceBetween: 16,
+  slidesPerView: 1.2,
+  spaceBetween: 20,
   modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Keyboard, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination],
   scrollbar: {
     el: ".swiper-scrollbar",
@@ -12705,8 +12705,8 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper", {
   },
   breakpoints: {
     1780: {
-      slidesPerView: 1,
-      spaceBetween: 24
+      // slidesPerView: 1.2,
+      spaceBetween: 22
     }
   }
 });
