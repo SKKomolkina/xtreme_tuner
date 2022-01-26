@@ -16,11 +16,11 @@
     max-width: 1199px;
 }
 
-@media (min-width: 1980px) {
-    .page-wrapper {
-        background: url('../../images/img/min1920.svg') no-repeat right top;
-    }
-}
+/*@media (min-width: 1980px) {*/
+/*    .page-wrapper {*/
+/*        background: url('../../images/img/min1920.svg') no-repeat right top;*/
+/*    }*/
+/*}*/
 
 @media (max-width: 1300px) {
     .page-wrapper__main {

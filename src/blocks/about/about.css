@@ -95,7 +95,7 @@
     }
 
     .about__icons {
-        margin-top: 43px;
+        margin-top: 59px;
     }
 
     .about__icons-item {
@@ -241,5 +241,10 @@
 
     .about__icons-item {
         margin-bottom: 41px;
+        max-width: 145px;
+    }
+
+    .about__icons > li:nth-last-of-type(-n+2) {
+        margin-bottom: 0;
     }
 }

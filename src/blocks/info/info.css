@@ -154,6 +154,7 @@
 
 @media (max-width: 990px) {
     .info {
+        padding-top: 0;
         margin-bottom: 75px;
     }
 
@@ -198,7 +199,7 @@
         position: relative;
         background: none;
         max-width: 100%;
-        margin-bottom: 40px;
+
     }
 
     .info-banner {
@@ -209,7 +210,7 @@
 
 @media (max-width: 739px) {
     .info {
-        padding-top: 0;
+        margin-bottom: 40px;
     }
 
     .info__wrapper {

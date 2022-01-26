@@ -185,12 +185,15 @@
     }
 
     .gear-text__wrapper {
+        margin-top: 6px;
+
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
     .gear__text {
+        margin-bottom: 20px;
         max-width: 468px;
 
         text-align: center;
@@ -204,6 +207,7 @@
 
     .gear-button__wrapper {
         margin-top: 22px;
+        margin: 0 auto;
         align-items: center;
     }
 
@@ -299,5 +303,19 @@
 
     .gear-button__wrapper {
         margin-top: 22px;
+    }
+
+    .gear-title__wrapper {
+        margin-top: 13px;
+    }
+
+    .gear__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .gear__subtitle {
+        font-size: 18px;
+        line-height: 26px;
     }
 }
